@@ -1,6 +1,6 @@
 import openpyxl
 
-sciezka = r'E:\Prywatne\programowanie\Prywatne\Python\zaautomatyzowanie\produkty.xlsx'
+sciezka = r'Downloads\produkty.xlsx'
 
 
 workbook = openpyxl.load_workbook(sciezka)
@@ -14,3 +14,4 @@ for wiersz in arkusz.iter_rows(min_row=2, values_only=True):
     print("Cena:", cena)
     print("Ilość:", ilosc)
     print("---")
+
